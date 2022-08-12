@@ -52,10 +52,11 @@ class ViewController: UICollectionViewController {
             alpha: 1), viewColor: .red),
     ]
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        collectionView.delegate = self
         print("10 M ke KM \(10.1.km)")
         print("\(1000.0.jadiRupiah())")
     }
@@ -91,6 +92,11 @@ extension ViewController {
         let vc = ExampleCollectionViewController(nibName: "ExampleCollectionViewController", bundle: nil)
         show(vc, sender: nil)
     }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return collectionView.frame.size
+    }
 }
 
 extension ViewController: OnCellClick {
@@ -99,5 +105,24 @@ extension ViewController: OnCellClick {
         items[index.row].buttonColor = .gray
         
         collectionView.reloadData()
+    }
+}
+
+extension ViewController {
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
     }
 }

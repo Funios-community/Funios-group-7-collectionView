@@ -15,6 +15,30 @@ class ExampleCollectionViewController: UIViewController {
         DummyColor(id: UUID(), buttonColor: .cyan, viewColor: .red),
         DummyColor(id: UUID(), buttonColor: .purple, viewColor: .blue),
         DummyColor(id: UUID(), buttonColor: .black, viewColor: .gray),
+        DummyColor(id: UUID(), buttonColor: .cyan, viewColor: .red),
+        DummyColor(id: UUID(), buttonColor: .purple, viewColor: .blue),
+        DummyColor(id: UUID(), buttonColor: .black, viewColor: .gray),
+        DummyColor(id: UUID(), buttonColor: .cyan, viewColor: .red),
+        DummyColor(id: UUID(), buttonColor: .purple, viewColor: .blue),
+        DummyColor(id: UUID(), buttonColor: .black, viewColor: .gray),
+        DummyColor(id: UUID(), buttonColor: .cyan, viewColor: .red),
+        DummyColor(id: UUID(), buttonColor: .purple, viewColor: .blue),
+        DummyColor(id: UUID(), buttonColor: .black, viewColor: .gray),
+        DummyColor(id: UUID(), buttonColor: .cyan, viewColor: .red),
+        DummyColor(id: UUID(), buttonColor: .purple, viewColor: .blue),
+        DummyColor(id: UUID(), buttonColor: .black, viewColor: .gray),
+        DummyColor(id: UUID(), buttonColor: .cyan, viewColor: .red),
+        DummyColor(id: UUID(), buttonColor: .purple, viewColor: .blue),
+        DummyColor(id: UUID(), buttonColor: .black, viewColor: .gray),
+        DummyColor(id: UUID(), buttonColor: .cyan, viewColor: .red),
+        DummyColor(id: UUID(), buttonColor: .purple, viewColor: .blue),
+        DummyColor(id: UUID(), buttonColor: .black, viewColor: .gray),
+        DummyColor(id: UUID(), buttonColor: .cyan, viewColor: .red),
+        DummyColor(id: UUID(), buttonColor: .purple, viewColor: .blue),
+        DummyColor(id: UUID(), buttonColor: .black, viewColor: .gray),
+        DummyColor(id: UUID(), buttonColor: .cyan, viewColor: .red),
+        DummyColor(id: UUID(), buttonColor: .purple, viewColor: .blue),
+        DummyColor(id: UUID(), buttonColor: .black, viewColor: .gray),
         DummyColor(id: UUID(),buttonColor: .green, viewColor: .darkText),
         DummyColor(id: UUID(), buttonColor: #colorLiteral(red: 1, green: 0.4078431373, blue: 0.6666666667, alpha: 1), viewColor: #colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)), // #colorLiteral(
         DummyColor(id: UUID(), buttonColor: UIColor(
@@ -57,10 +81,25 @@ extension ExampleCollectionViewController: UICollectionViewDataSource, UICollect
             print("Do the action")
         }
         
+        cell.backgroundColor = .gray
         
         return cell
     }
 
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+            cell.backgroundColor = .red
+        })
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+            cell.backgroundColor = .black
+        })
+    }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
 //        self.present(vc, animated: true)

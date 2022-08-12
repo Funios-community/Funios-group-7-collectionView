@@ -19,6 +19,8 @@
 		BF8B71EC28A548E6004AD15A /* ExampleCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF8B71EA28A548E6004AD15A /* ExampleCollectionViewController.xib */; };
 		BF8B71EF28A54C62004AD15A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8B71ED28A54C62004AD15A /* CollectionViewCell.swift */; };
 		BF8B71F028A54C62004AD15A /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF8B71EE28A54C62004AD15A /* CollectionViewCell.xib */; };
+		BF97A43728A6952200C4E31F /* AnotherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF97A43628A6952200C4E31F /* AnotherViewController.swift */; };
+		BFA1C84C28A68BEC00230795 /* LifeCycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA1C84B28A68BEC00230795 /* LifeCycleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		BF8B71EA28A548E6004AD15A /* ExampleCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleCollectionViewController.xib; sourceTree = "<group>"; };
 		BF8B71ED28A54C62004AD15A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		BF8B71EE28A54C62004AD15A /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		BF97A43628A6952200C4E31F /* AnotherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherViewController.swift; sourceTree = "<group>"; };
+		BFA1C84B28A68BEC00230795 /* LifeCycleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCycleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 		BFA1C84928A6878300230795 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				BFA1C84B28A68BEC00230795 /* LifeCycleViewController.swift */,
+				BF97A43628A6952200C4E31F /* AnotherViewController.swift */,
 				BF8B71D528A536B5004AD15A /* ViewController.swift */,
 				BF8B71D728A536B5004AD15A /* Main.storyboard */,
 				BF8B71E528A53C81004AD15A /* CustomCollectionViewCell.swift */,
@@ -181,6 +187,8 @@
 				BF8B71D428A536B5004AD15A /* SceneDelegate.swift in Sources */,
 				BF8B71E628A53C81004AD15A /* CustomCollectionViewCell.swift in Sources */,
 				BF8B71E828A54608004AD15A /* TesExtenstion.swift in Sources */,
+				BFA1C84C28A68BEC00230795 /* LifeCycleViewController.swift in Sources */,
+				BF97A43728A6952200C4E31F /* AnotherViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
