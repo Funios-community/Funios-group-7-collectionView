@@ -70,19 +70,35 @@
 			children = (
 				BF8B71D128A536B5004AD15A /* AppDelegate.swift */,
 				BF8B71D328A536B5004AD15A /* SceneDelegate.swift */,
-				BF8B71D528A536B5004AD15A /* ViewController.swift */,
-				BF8B71D728A536B5004AD15A /* Main.storyboard */,
+				BFA1C84928A6878300230795 /* Storyboard */,
+				BFA1C84A28A6879800230795 /* XiB */,
 				BF8B71DA28A536B6004AD15A /* Assets.xcassets */,
 				BF8B71DC28A536B6004AD15A /* LaunchScreen.storyboard */,
 				BF8B71DF28A536B6004AD15A /* Info.plist */,
-				BF8B71E528A53C81004AD15A /* CustomCollectionViewCell.swift */,
 				BF8B71E728A54608004AD15A /* TesExtenstion.swift */,
+			);
+			path = "Funios Group 7 collection view";
+			sourceTree = "<group>";
+		};
+		BFA1C84928A6878300230795 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BF8B71D528A536B5004AD15A /* ViewController.swift */,
+				BF8B71D728A536B5004AD15A /* Main.storyboard */,
+				BF8B71E528A53C81004AD15A /* CustomCollectionViewCell.swift */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		BFA1C84A28A6879800230795 /* XiB */ = {
+			isa = PBXGroup;
+			children = (
 				BF8B71E928A548E6004AD15A /* ExampleCollectionViewController.swift */,
 				BF8B71EA28A548E6004AD15A /* ExampleCollectionViewController.xib */,
 				BF8B71ED28A54C62004AD15A /* CollectionViewCell.swift */,
 				BF8B71EE28A54C62004AD15A /* CollectionViewCell.xib */,
 			);
-			path = "Funios Group 7 collection view";
+			path = XiB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
